@@ -20,7 +20,7 @@ let texto = "NOMBRE DEL GRUPO";
 let texto_2 = "Amawta Relmu - Francesca Cantore - Máximo Sanchez Granel - Nic Motta"
 let texto_3 = "Lenguajes de las Artes Electrónicas: Sonido"
 let texto_4 = "MAE - UNTREF - 2020"
-let texto_5 = "CLICK PARA COMENZAR - SE RECOMIENDA ESTAR EN PANTALLA COMPLETA (F11)";
+let texto_5 = "CLICK PARA COMENZAR - SE RECOMIENDA EL USO DE AURICULARES Y ESTAR EN PANTALLA COMPLETA (F11)";
 
 function preload() {
 
@@ -84,6 +84,8 @@ function draw() {
   sonido_3.pan(panneo);
   sonido_4.pan(panneo);
 
+
+
   if (inicio == 1)
   {
   noFill();
@@ -99,4 +101,11 @@ function mousePressed()
   getAudioContext().resume()
   background(50);
   inicio = 1;
+
+  noStroke();
+  fill(200, 40);
+  circle(0,0,500);
+  circle(0,height,500);
+  circle(width,0,500);
+  circle(width,height,500);
 }
