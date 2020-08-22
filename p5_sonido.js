@@ -106,10 +106,10 @@ function mousePressed()
   noFill();
   stroke(100);
 
-  circle(0,0,500);
-  circle(0,height,500);
-  circle(width,0,500);
-  circle(width,height,500);
+  circle(0,0,300);
+  circle(0,height,300);
+  circle(width,0,300);
+  circle(width,height,300);
 
   fill(100);
   noStroke();
