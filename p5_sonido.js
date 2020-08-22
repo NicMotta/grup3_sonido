@@ -1,21 +1,10 @@
-let sonido_1;
-let sonido_2;
-let sonido_3;
-let sonido_4;
 
-let volumen_1;
-let volumen_2;
-let volumen_3;
-let volumen_4;
-
-let color_1;
-let color_2;
-let color_3;
-let color_4;
-
+let sonido_1, sonido_2, sonido_3, sonido_4;
+let volumen_1, volumen_2, volumen_3, volumen_4;
+let color_1, color_2, color_3, color_4;
 let panneo;
-
 let inicio;
+
 let texto = "NOMBRE DEL GRUPO";
 let texto_2 = "Amawta Relmu - Francesca Cantore - Máximo Sanchez Granel - Nic Motta"
 let texto_3 = "Lenguajes de las Artes Electrónicas: Sonido"
