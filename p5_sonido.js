@@ -13,6 +13,8 @@ let color_2;
 let color_3;
 let color_4;
 
+let panneo;
+
 let inicio;
 let texto = "NOMBRE DEL GRUPO";
 let texto_2 = "Amawta Relmu - Francesca Cantore - Máximo Sanchez Granel - Nic Motta"
@@ -65,15 +67,22 @@ function draw() {
   volumen_3 = map(mouseX, 0, displayWidth, 1, 0);
   volumen_4 = map(mouseY, 0, displayHeight, 1, 0);
 
-  sonido_1.setVolume((volumen_3 + volumen_4) /2);
-  sonido_2.setVolume((volumen_1 + volumen_4) /2);
-  sonido_3.setVolume((volumen_2 + volumen_3) /2);
-  sonido_4.setVolume((volumen_1 + volumen_2) /2);
+  sonido_1.setVolume((volumen_3 + volumen_4) /2); //arriba izquierda
+  sonido_2.setVolume((volumen_1 + volumen_4) /2); // arriba derecha
+  sonido_3.setVolume((volumen_2 + volumen_3) /2); // abajo izquierda
+  sonido_4.setVolume((volumen_1 + volumen_2) /2); // abajo derecha
 
   color_1 = map(volumen_1, 0, 1, 0, 255);
   color_2 = map(volumen_2, 0, 1, 0, 255);
   color_3 = map(volumen_3, 1, 0, 0, 255);
   color_4 = map(volumen_4, 1, 0, 0, 255);
+
+  panneo = map(mouseX, 0, displayWidth, -0.6, 0.6);
+
+  sonido_1.pan(panneo);
+  sonido_2.pan(panneo);
+  sonido_3.pan(panneo);
+  sonido_4.pan(panneo);
 
   if (inicio == 1)
   {
