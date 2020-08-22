@@ -35,6 +35,7 @@ function setup() {
   inicio = 0;
 
   fill(255);
+  noStroke();
   textSize(32);
   textAlign(CENTER, CENTER);
   text(texto, width / 2, height / 2);
