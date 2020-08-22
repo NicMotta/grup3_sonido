@@ -33,7 +33,7 @@ function preload() {
 
 function setup() {
 
-  createCanvas(displayWidth -1, displayHeight -1);
+  createCanvas(displayWidth -1, displayHeight -0.5);
 
   sonido_1.loop();
   sonido_2.loop();
@@ -102,10 +102,20 @@ function mousePressed()
   background(50);
   inicio = 1;
 
-  noStroke();
-  fill(200, 40);
+  //noStroke();
+  noFill();
+  stroke(100);
+
   circle(0,0,500);
   circle(0,height,500);
   circle(width,0,500);
   circle(width,height,500);
+
+  fill(100);
+  noStroke();
+  textSize(15);
+  text("Amawta", displayWidth * 0.05, displayHeight * 0.05);
+  text("Máximo", displayWidth * 0.05, displayHeight * 0.95);
+  text("Francesca", displayWidth * 0.95, displayHeight * 0.05);
+  text("Nic", displayWidth * 0.95, displayHeight * 0.95);
 }
