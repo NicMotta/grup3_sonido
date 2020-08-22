@@ -15,9 +15,10 @@ let color_4;
 
 let inicio;
 let texto = "NOMBRE DEL GRUPO";
-let texto_2 = "Amawta Relmu - Francesca Cantore - Maximo Sanchez Granel - Nic Motta"
-let texto_3 = "Lenguajes de las Artes Electrónicas: Sonido / MAE - UNTREF - 2020"
-let texto_4 = "CLICK PARA COMENZAR - SE RECOMIENDA ESTAR EN PANTALLA COMPLETA (F11)"
+let texto_2 = "Amawta Relmu - Francesca Cantore - Máximo Sanchez Granel - Nic Motta"
+let texto_3 = "Lenguajes de las Artes Electrónicas: Sonido"
+let texto_4 = "MAE - UNTREF - 2020"
+let texto_5 = "CLICK PARA COMENZAR - SE RECOMIENDA ESTAR EN PANTALLA COMPLETA (F11)";
 
 function preload() {
 
@@ -49,9 +50,11 @@ function setup() {
   text(texto_2, width / 2, (height / 2) + 50);
   textSize(28);
   text(texto_3, width / 2, (height / 2) + 100);
+  textSize(24);
+  text(texto_4, width / 2, (height / 2) + 150);
   fill(150);
   textSize(20);
-  text(texto_4, width / 2, (height / 2) + 150);
+  text(texto_5, width / 2, (height / 2) + 200);
 
 }
 
