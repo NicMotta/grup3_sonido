@@ -14,7 +14,7 @@ let color_3;
 let color_4;
 
 let inicio;
-let texto = "NOMBRE DEL GRUPO O DE ESTO";
+let texto = "NOMBRE DEL GRUPO";
 let texto_2 = "Amawta Relmu - Francesca Cantore - Maximo Sanchez Granel - Nic Motta"
 let texto_3 = "Lenguajes de las Artes Electrónicas: Sonido / MAE - UNTREF - 2020"
 let texto_4 = "CLICK PARA COMENZAR - SE RECOMIENDA ESTAR EN PANTALLA COMPLETA (F11)"
@@ -38,7 +38,7 @@ function setup() {
   sonido_4.loop();
 
 
-  background(80);
+  background(50);
 
   inicio = 0;
 
@@ -49,14 +49,13 @@ function setup() {
   text(texto_2, width / 2, (height / 2) + 50);
   textSize(28);
   text(texto_3, width / 2, (height / 2) + 100);
-  textSize(25);
+  fill(150);
+  textSize(20);
   text(texto_4, width / 2, (height / 2) + 150);
 
 }
 
 function draw() {
-
-
 
   volumen_1 = map(mouseX, 0, displayWidth, 0, 1);
   volumen_2 = map(mouseY, 0, displayHeight, 0, 1);
@@ -71,24 +70,21 @@ function draw() {
   color_1 = map(volumen_1, 0, 1, 0, 255);
   color_2 = map(volumen_2, 0, 1, 0, 255);
   color_3 = map(volumen_3, 1, 0, 0, 255);
-
-  color_4 = map(volumen_4, 1, 0, 200, 800);
+  color_4 = map(volumen_4, 1, 0, 0, 255);
 
   if (inicio == 1)
   {
   noFill();
-  stroke(color_1, color_2, color_4, 50);
+  stroke(color_1, color_2, 255, 50);
   line(width / 2, height / 2, mouseX, mouseY);
   }
 
 }
 
 
-
-
 function mousePressed()
 {
   getAudioContext().resume()
-  background(80);
+  background(50);
   inicio = 1;
 }
