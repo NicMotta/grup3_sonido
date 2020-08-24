@@ -94,18 +94,18 @@ function mousePressed()
 
   //noStroke();
   noFill();
-  stroke(100);
+  stroke(130);
 
-  circle(0,0,300);
-  circle(0,height,300);
-  circle(width,0,300);
-  circle(width,height,300);
+  circle( displayWidth * 0.06, displayHeight * 0.1, 150);
+  circle(displayWidth * 0.06, displayHeight * 0.9, 150);
+  circle(displayWidth * 0.94, displayHeight * 0.1, 150);
+  circle(displayWidth * 0.94, displayHeight * 0.9, 150);
 
-  fill(100);
+  fill(130);
   noStroke();
   textSize(15);
-  text("Amawta", displayWidth * 0.05, displayHeight * 0.05);
-  text("Máximo", displayWidth * 0.05, displayHeight * 0.95);
-  text("Francesca", displayWidth * 0.95, displayHeight * 0.05);
-  text("Nic", displayWidth * 0.95, displayHeight * 0.95);
+  text("Amawta", displayWidth * 0.06, displayHeight * 0.1);
+  text("Máximo", displayWidth * 0.06, displayHeight * 0.9);
+  text("Francesca", displayWidth * 0.94, displayHeight * 0.1);
+  text("Nic", displayWidth * 0.94, displayHeight * 0.9);
 }
