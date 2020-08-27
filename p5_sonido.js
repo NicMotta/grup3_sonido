@@ -13,10 +13,10 @@ let texto_5 = "CLICK PARA COMENZAR - SE RECOMIENDA EL USO DE AURICULARES Y ESTAR
 
 function preload() {
 
-  sonido_1 = loadSound('assets/ama.mp3'); // amawta
-  sonido_2 = loadSound('assets/fra.mp3'); // francesca
-  sonido_3 = loadSound('assets/max.mp3'); // maximo
-  sonido_4 = loadSound('assets/nec.mp3'); // nic
+  sonido_1 = loadSound('assets/amawta.mp3'); // amawta
+  sonido_2 = loadSound('assets/francesca.mp3'); // francesca
+  sonido_3 = loadSound('assets/maximo.mp3'); // maximo
+  sonido_4 = loadSound('assets/nic.mp3'); // nic
 }
 
 
