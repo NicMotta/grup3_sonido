@@ -5,7 +5,7 @@ let color_1, color_2, color_3, color_4;
 let panneo;
 let inicio;
 
-let texto = "NOMBRE DEL GRUPO";
+let texto = "Grup3";
 let texto_2 = "Amawta Relmu - Francesca Cantore - Máximo Sanchez Granel - Nic Motta"
 let texto_3 = "Lenguajes de las Artes Electrónicas: Sonido"
 let texto_4 = "MAE - UNTREF - 2020"
