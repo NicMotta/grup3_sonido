@@ -22,7 +22,7 @@ function preload() {
 
 function setup() {
 
-  createCanvas(displayWidth -1, displayHeight -0.5);
+  createCanvas(window.innerWidth, window.innerHeight);
 
   sonido_1.loop();
   sonido_2.loop();
